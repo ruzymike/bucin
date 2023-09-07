@@ -1,0 +1,108 @@
+<html><meta charset='UTF-8'/><meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5' name='viewport'/><meta content='IE=edge' http-equiv='X-UA-Compatible'/>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet"><script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script><script src="https://kit.fontawesome.com/4f3ce16e3e.js" crossorigin="anonymous"></script><link href="https://Foryou.feeldream.repl.co/style.css" rel="stylesheet" type="text/css" /><script src="https://Foryou.feeldream.repl.co/script.js"></script>
+<head>
+<!-- 
+This code was made by Rayya R
+Blog: https://sinkronin.com
+Instagram: rayyarrr
+TikTok: rayyarr_
+-->
+</head>
+<body><div id="bodyblur">
+<!-- Wallpaper --><img src="https://i.postimg.cc/7Y9X8WVX/IMG-20211201-090448-830.jpg" width="100%" height="100%"/></div>
+
+<!-- Isi Konten Pertama --><div id='Content'><p id="idgeser"></p>
+
+<div><div id='pergeseran'>
+
+<!-- Pesan -->
+<p><b><img src="2.gif"/><br>
+	<span><b id="halo"></b></span>
+</b></p>
+
+<p><b><img src="1.gif"/><br>
+	<span>Jangan diemin aku lagi ya</span>
+</b></p>
+
+<p><b><img src="3.gif"/><br>
+	<span>Nanti aku sedih kalo kamu diemin aku</span>
+</b></p>
+
+<p><b><img src="4.gif"/><br>
+	<span>Nih aku cium</span>
+</b></p>
+
+<p><b><img src="5.gif"/><br>
+	<span>mau peluk:(</span>
+</b></p>
+
+
+<!-- Tombol Akhiran --><p><span id="akhiran" onClick="mulaiakhir();this.onclick=null;">[ Klik LOVE ini &#128157; ]</span></p>
+
+</div></div>
+</div>
+
+<!-- Isi Konten Kedua --><div id='k2'><div class="image">
+<img id="ftdua" src="6.gif" width="130px" height="130px"/></div>
+<p id="final1"></p><p id="final2"></p><p id="idkirim" onClick="menuju();">[ Kirim Pesan ]</p></div>
+
+<script>
+  function nonFo() {document.getElementById('idfoto').style.display = "none";} function showFo() {document.getElementById('idfoto').style.display = "block";}
+  function nonDiv() {document.getElementById('Content').style = "opacity:0;visibility:hidden;margin-top:30vh;";} 
+  function showDiv() {setTimeout(kpemb,100);setTimeout(ketik,1500);document.getElementById('Content').style = "opacity:1;margin-top:16vh;animation:kont 3s infinite;";}
+  function showAkhir() {setInterval(createHeart,200);document.getElementById('bodyblur').style = "opacity:1;";document.getElementById('k2').style = "opacity:1;transform:scale(1);margin:0;";document.getElementById('ftdua').style = "transform:scale(1);";document.getElementById('final1').style = "transform:scale(1);";document.getElementById('Content').style.display = "none";}
+  function mulaiakhir() {nonDiv();setTimeout(showAkhir,1400);setTimeout(finalis,2400);}
+  function showTom() {document.getElementById('idkirim').style = "opacity:1;visibility:visible;margin-top:140px;";}
+  
+  var aa=0,pemb;pemb = "";var i=0,halo;halo = "";var u=0,text2;text2 = "";var o=0,text3;text3 = "";var a=0,final1;final1 = "";var ab=0,final2;final2 = "";
+  
+  function kpemb() {if(aa<pemb.length){document.getElementById("idgeser").innerHTML += pemb.charAt(aa);aa++;setTimeout(kpemb,100);}
+    if(aa==pemb.length){document.getElementById("idgeser").innerHTML = pemb + "&#128073;";document.getElementById("pergeseran").style = "opacity:1;visibility:visible;";}
+  }
+  function ketik() {if(i<halo.length){document.getElementById("halo").innerHTML += halo.charAt(i);i++;setTimeout(ketik,100);}
+    if(i==halo.length){document.getElementById("akhiran").style = "display:block";}
+  }
+  
+  function finalis() {if(a<final1.length){document.getElementById("final1").innerHTML += final1.charAt(a);a++;setTimeout(finalis,100);}
+    if(a==final1.length){finaliss();}
+  }
+  function finaliss() {if(ab<final2.length){document.getElementById("final2").innerHTML += final2.charAt(ab);ab++;setTimeout(finaliss,200);}
+    if(ab==final2.length){setTimeout(showTom,500);}
+  }
+  </script>
+
+<script type="text/javascript">
+            const swals = Swal.mixin({allowOutsideClick: false, cancelButtonColor: '#FF0040',}); const swalsy = Swal.mixin({confirmButtonText: 'Iya', allowOutsideClick: false,}); const swalst = Swal.mixin({allowOutsideClick: false, showConfirmButton: false, timer: 1500, timerProgressBar: true,});
+            
+            function play() {var audio = new Audio('' + linkmp3);audio.play();}
+			async function menuju(){if(ab==final2.length){window.location = "https://api.whatsapp.com/send?phone=6281283105195&text=" + pesanwhatsapp;}}
+            
+            async function tanpanama(){
+                nama = "Kamu";
+				window.nama = nama;
+                lanjut();
+             }
+            
+            //GANTI SEMUA TEKS, PESAN WHATSAPP, DAN AUDIO DI SINI
+
+             async function lanjut() {
+             	await swals.fire('Selamat datang!', 'Sekarang lihat ini ya :)');
+             	pemb = "Geser ya    ";
+             	halo = "Haii, " + nama + "!";
+             
+                 final1 = "Aku sayang kamuuu ><         ";
+                 final2 = "Maafin aku yaaa <3";
+                 
+                 pesanwhatsapp = "Awwww. Iyaa aku maafin ko ><";
+                 linkmp3 = 'https://Foryou.feeldream.repl.co/faudio.mp3';
+                 
+                 showDiv();play();
+             }
+             
+             tanpanama();
+</script>
+<script>
+const body = document.querySelector("body");function createHeart() {const heart = document.createElement("div"); heart.className = "fas fa-heart"; heart.style.left = (Math.random() * 90)+"vw"; heart.style.animationDuration = (Math.random()*3)+2+"s"; body.appendChild(heart);} setInterval(function name(params) {var heartArr = document.querySelectorAll(".fa-heart"); if (heartArr.length > 100) {heartArr[0].remove()}},100);
+</script>
+</body>
+</html>
